@@ -1,34 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block titulo %}Persona3{% endblock %}</title>
-    <link rel="stylesheet" href="../static/style.css">
-</head>
+{% extends "base.html"%}
+
+{% block titulo %}Inicio{% endblock %}
 <body>
 
-    {% block menu %}
-
-        <nav>
-            <a href="/">Inicio</a>
-            <a href="/personas">Personas</a>
-            <a href="/Tartaro">El tartaro</a>
-            
-        </nav>
+    {% block content %}
     
-    
-    <H1>Persona 3 Reload</H1>
-    <img  class="logo" src="../static/image.png" alt="p3">
-
-    {% endblock %}
-
     <p>Persona es una saga de juegos creados por la empresa japonesa llamada Atlus</p>
 
     <div class="card">
         <h2>¿De qué trata?</h2>
-        <h3>La saga no tiene una historia clara. Pero en todas sus entregas hacen presencia unos seres llamados persona</h3>
+        <h3>La saga Persona mezcla vida estudiantil, relaciones sociales y combates sobrenaturales. Normalmente los protagonistas son jóvenes que despiertan un poder llamado “Persona”, una manifestación de su personalidad, y deben enfrentar problemas psicológicos, emociones humanas y amenazas ocultas mientras equilibran su vida diaria con aventuras en mundos alternos.</h3>
     </div>
+
+    {% endblock %}
+
+    
 </body>
 
 </html>
