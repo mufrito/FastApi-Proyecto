@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block titulo %}Persona3{% endblock %}</title>
-    <link rel="stylesheet" href="{{ url_for('static', path='style.css') }}">
+    <link rel="stylesheet" href="{% static '/static/style.css' %}">
 </head>
 <body>
     <nav>Menú de navegación</nav>
@@ -19,7 +19,7 @@
     
     
         <H1>Persona 3 Reload</H1>
-    <img  class="logo" src="{{ url_for('static', path='image.png') }}" alt="p3">
+    <img  class="logo" src="{% static '/static/image.png' %}" alt="p3">
     </header>
     {% block content %}{% endblock %}
 
